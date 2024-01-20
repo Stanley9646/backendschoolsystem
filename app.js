@@ -30,10 +30,10 @@ app.listen(port, console.log(`server is listening on port ${port}...`))
 
 
 const dbSettings = {
-  user:"Stanley",
-  server: "DESKTOP-8NI5HF5",
-  database:"SchoolSystem",
-  password:"Kizangila@9646",
+  user: process.env.user,
+  server: process.env.server,
+  database:process.env.database,
+  password:process.env.password,
   enableArithAbort: true,
   pool: {
     max: 10,
